@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/dailyTV"
+		android:layout_width="166dp"
+		android:layout_height="49dp"
+		android:text="0"
+		android:textAlignment="center"
+		android:textSize="40sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.497"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.118" />
+
+	<Button
+		android:id="@+id/resetB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="resetDaily"
+		android:text="Reset"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.543" />
+
+	<EditText
+		android:id="@+id/teaET"
+		android:layout_width="61dp"
+		android:layout_height="44dp"
+		android:ems="10"
+		android:inputType="number"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.254"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.344" />
+
+	<Button
+		android:id="@+id/caffB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="mgCaffeiene"
+		android:text="mg of Caffeine"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.769"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.442" />
+
+	<EditText
+		android:id="@+id/caffET"
+		android:layout_width="61dp"
+		android:layout_height="44dp"
+		android:ems="10"
+		android:inputType="number"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.254"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.443" />
+
+	<Button
+		android:id="@+id/coffeeB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="ouncesCoffee"
+		android:text="oz. of Coffee"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.762"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.237" />
+
+	<Button
+		android:id="@+id/logoutB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="logout"
+		android:text="Logout"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.827" />
+
+	<Button
+		android:id="@+id/submitDayB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="submitDay"
+		android:text="Submit Daily Caffeine Amount"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.638" />
+
+	<Button
+		android:id="@+id/viewGraphB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="viewGraphAct"
+		android:text="View Historical Intake"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.497"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.733" />
+
+	<EditText
+		android:id="@+id/coffeeET"
+		android:layout_width="61dp"
+		android:layout_height="44dp"
+		android:ems="10"
+		android:inputType="number"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.254"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.241" />
+
+	<Button
+		android:id="@+id/teaB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="ouncesTea"
+		android:text="oz. of Tea"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.752"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.341" />
+
+	<TextView
+		android:id="@+id/textView4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Caffeine consumed today (in mg):"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.497"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.058" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
